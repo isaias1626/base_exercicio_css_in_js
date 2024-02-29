@@ -8,6 +8,11 @@ export const HeroForm = styled.form`
   position: relative;
   display: flex;
   align-items: center;
+
+  @media (max-width: 768px) {
+    height: auto;
+    padding: 24px 0;
+  }
 `
 
 export const FormOverlay = styled.div`
@@ -19,6 +24,18 @@ export const FormOverlay = styled.div`
   background-color: var(--cor-principal);
   content: '';
   opacity: 0.7;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+`
+
+export const TituloH2 = styled.h2`
+  font-family: Gloock, serif;
+  font-size: 48px;
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
 `
 
 export const FormContent = styled.div`
